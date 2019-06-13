@@ -20,7 +20,7 @@ public class TwoDGame {
     int eff = (goalY + goalX);
     char[][] board = new char[4][4]; // Set board and its size
   
-  // Set all of board to be empty spot represented  by 'O'
+    // Set all of board to be empty spot represented  by 'O'
     for (int row = 0; row < board.length; row++) {
       for (int col = 0; col < board[0].length; col++) {
         board[row][col] = 'O';
@@ -30,7 +30,7 @@ public class TwoDGame {
     board[userY][userX] = 'x';
     board[goalY][goalX] = '*';
   
-  // Welcome text
+    // Welcome text
     System.out.println("Welcome to the Array Game!  Move your sprite \"x\" to the \"*\" to win.");
     System.out.println("\nInitial Board:");
   
@@ -48,14 +48,14 @@ public class TwoDGame {
       board[userY][userX] = 'x'; // After updating user coordinates, change visible position on screen
     }
   
-  // Congratulations text
+    // Congratulations text
     System.out.println("\nCongrats, you have won! You completed the game in " + moves + " moves.");
 
     if (moves == eff){
       System.out.println ("You have completed this level in the most efficient way! The robot overlords are happy with your success.");
       
     } else {
-    System.out.println ("You didn't complete this level in the most efficient way. You could've done it in " + eff + " moves.");
+      System.out.println ("You didn't complete this level in the most efficient way. You could've done it in " + eff + " moves.");
     }
   }
  
